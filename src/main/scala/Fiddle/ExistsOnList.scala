@@ -35,6 +35,8 @@ object ExistsOnList {
     val g = List(("1"),("2"))
     val h = g.exists(a => a=="1")
     println(h)
+
+    val i = g.exists(a => {println("a="+a);a=="2"})
   }
 
 }

@@ -8,7 +8,9 @@ object FlatMapGet {
       "Cola" -> (BigDecimal(0.50), false, false),
       "Coffee" -> (BigDecimal(1.00), false, true),
       "Cheese Sandwich" -> (BigDecimal(2.00), true, false),
-      "Steak Sandwich" -> (BigDecimal(4.50), true, true)
+      "Steak Sandwich" -> (BigDecimal(4.50), true, true),
+      "Mouse Sandwich" -> (BigDecimal(4.50), true, true)
+
     )
 
 
@@ -22,5 +24,14 @@ object FlatMapGet {
     println("\n4:")
     println(menu.get(_))
     println("\n5:"+menu.get("Cola"))
+
+    //    myItems.filterKeys(items.map(_.toLowerCase).contains).values.toList
+    val d = menu.filterKeys(items.map(a=>a).contains).values.toList
+    println(d)
+
+    val e = menu.filterKeys(a=>{println("a="+a);true})
+    println(e)
+
+
   }
 }
