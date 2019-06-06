@@ -28,8 +28,8 @@ object ExistsOnList {
     val c = x.exists(_._2 == "C")
     val d = x.exists(a => a == "B")
 
-    println(c)
-    println(d)
+    println("c="+c)
+    println("d="+d)
 
 
     val g = List(("1"),("2"))
