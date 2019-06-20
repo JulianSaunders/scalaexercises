@@ -1,13 +1,12 @@
 package RestaurantBilling.flexCart
 
 import scala.collection.mutable.ListBuffer
-import scala.math.BigDecimal.RoundingMode
 
 object FlexCart {
   case class Item(price: BigDecimal)
   val menu = Map(
-    "Dove Soap" -> Item(.50),
-    "Axe Deo" -> Item(99.99)
+    "item1" -> Item(.50),
+    "item2" -> Item(99.99)
   )
 
   // https://alvinalexander.com/scala/how-to-create-mutable-list-in-scala-listbuffer-cookbook
