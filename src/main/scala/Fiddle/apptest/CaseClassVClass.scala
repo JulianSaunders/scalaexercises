@@ -26,7 +26,7 @@ object CaseClassVClass extends App {
 
   println("c1 name = " + c1.name)
   println("c2 myName  = " + c2.myName)
-  println("c3 name = " + c1.name)
+  println("c3 name = " + c3.name)
 
 
   val cat = new Cat
